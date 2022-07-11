@@ -61,6 +61,17 @@ export function Dashboard() {
       },
       date:'13/04/2022'
     },
+    {
+      id: '4',
+      type: 'negative',
+      title:'Aluguel Do AP',
+      amount:'R$ 1.200,00',
+      category: {
+        name: 'Casa',
+        icon: 'shopping-bag'
+      },
+      date:'13/04/2022'
+    },
   ]
 
   return (
