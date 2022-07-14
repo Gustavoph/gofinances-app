@@ -10,6 +10,7 @@ import {
   Container,
   PowerIcon,
   UserWrapper,
+  LogoutButton,
   Transactions,
   UserGreeting,
   HighlightCards,
@@ -91,7 +92,9 @@ export function Dashboard() {
             </User>
           </UserInfo>
 
-          <PowerIcon name="power" />
+          <LogoutButton>
+            <PowerIcon name="power" />
+          </LogoutButton>
         </UserWrapper> 
       </Header>
 

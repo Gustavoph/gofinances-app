@@ -1,13 +1,14 @@
 import React from 'react';
+import 'react-native-gesture-handler';
 import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components/native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import {
   useFonts,
-  Poppins_400Regular,
+  Poppins_700Bold,
   Poppins_500Medium,
-  Poppins_700Bold
+  Poppins_400Regular,
 } from '@expo-google-fonts/poppins';
 
 import theme from './src/global/styles/theme';

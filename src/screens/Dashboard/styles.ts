@@ -9,6 +9,7 @@ import {
   getStatusBarHeight, 
 } from 'react-native-iphone-x-helper';
 import { FlatList, FlatListProps } from 'react-native';
+import { BorderlessButton } from 'react-native-gesture-handler';
 import { DataListProps } from '.';
 
 export const Container = styled.View`
@@ -62,6 +63,8 @@ export const UserName = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
 `;
 
+export const LogoutButton = styled(BorderlessButton as new(props: any) => BorderlessButton)``;
+
 export const PowerIcon = styled(Feather)`
   color: ${({ theme }) => theme.colors.secondary};
   font-size: ${RFValue(24)}px;
@@ -101,3 +104,4 @@ export const TransactionList = styled(
     paddingBottom: getBottomSpace()
   }
 })``;
+

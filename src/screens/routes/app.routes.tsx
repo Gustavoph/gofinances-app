@@ -1,9 +1,9 @@
 import React from 'react';
 import { Platform } from 'react-native';
+import { useTheme } from 'styled-components/native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { useTheme } from 'styled-components';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { createBottomTabNavigator  } from '@react-navigation/bottom-tabs'
 import { Register } from '../Register';
 import { Dashboard } from '../Dashboard';
 
@@ -11,7 +11,7 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 export function AppRoutes() {
   const theme = useTheme();
-
+  
   return (
     <Navigator
       screenOptions={{
